@@ -1,0 +1,350 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* estilos del body */
+
+body{
+    background-color: rgb(241, 158, 63);
+}
+
+/* estilos encabezado y logos */
+
+.encabezado{
+    background-color: rgb(238, 144, 36);
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 10px;
+}
+
+.icono{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.sponsorDios, .ceroOcho{
+    margin: 20px;
+    padding: 20px 10px 5px 10px;
+    border-radius: 1000px;
+    box-shadow: 5px 10px 20px black;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 55px;
+    text-shadow: 2px 3px 5px black;
+}
+
+/* estilps subtitulo */
+
+h2{
+    background-color: rgb(238, 144, 36);
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 3px 5px black;
+    margin: 0px;
+    padding: 20px;
+}
+
+/* estilos del menu */
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.menuNavegador{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(238, 144, 36);
+    margin: 10px;
+    padding: 10px 50px;
+    border-radius: 500px;
+    box-shadow: 2px 3px 5px black;
+}
+
+/* estilos de la portada */
+
+.portadaEpigrafe{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.epigrafeHome{
+    background-color: black;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* estilos del video y resumen */
+
+.videoResumen{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.video{
+    width: 5000px;
+    margin: 50px;
+    box-shadow: 4px 5px 7px black;
+}
+
+.textoResumen{
+    display: flex;
+    flex-flow: column;
+    margin: 20px;
+    gap: 15px;
+}
+
+/* estilos del footer */
+
+footer{
+    background-color: rgb(238, 144, 36);
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+/* ESTILOS DE GALERIA */
+
+.ysyGalery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+    margin: 10px;
+}
+
+.img-galery{
+    height: 300px;
+    width: 500px;
+}
+
+.main-galery{
+    background-color: rgb(238, 144, 36);
+}
+
+/* estilos de ventana historia */
+
+.historias{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.historiaSubtitulo{
+    background-color: black;
+    color: white;
+    text-shadow: 2px 3px 5px white;
+}
+
+.historia-uno, .historia-dos, .historia-tres, .historia-cuatro, .historia-cinco, .historia-seis{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+/* estilos de la ventada merch */
+
+.portadaMerch{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.merchOfi{
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+
+.contain{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.producto-uno, .producto-dos{
+    height: 700px;
+    width: 520px;
+}
+
+.promo{
+    display: flex;
+    flex-flow: column;
+}
+
+.productoDescripcion{
+    color: white;
+}
+
+.sorteo{
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ESTILOS DE DISCOGRAFIA */
+
+.main-disc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 500px 70px 500px 70px 500px 70px 500px;
+
+    grid-template-areas: 
+        "nombre-ant nombre-ant"
+        "disco-ant tracklist-ant"
+        "nombre-ham nombre-ham"
+        "disco-ham tracklist-ham"
+        "nombre-meb nombre-meb"
+        "disco-meb tracklist-meb"
+        "nombre-tdv nombre-tdv"
+        "disco-tdv tracklist-tdv";
+}
+
+.antezana{
+    grid-area: nombre-ant;
+}
+
+.img-ant{
+    height: 500px;
+}
+
+.album-uno{
+    display: flex;
+    justify-content: center;
+    grid-area: disco-ant;
+}
+
+.track-list-antezana{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-area: tracklist-ant;
+}
+
+.ham{
+    grid-area: nombre-ham;
+}
+
+.img-ham{
+    height: 500px;
+}
+
+.album-dos{
+    display: flex;
+    justify-content: center;
+    grid-area: disco-ham;
+}
+
+.track-list-ham{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-area: tracklist-ham;
+}
+
+.meb{
+    grid-area: nombre-meb;
+}
+
+.img-meb{
+    height: 500px;
+}
+
+.album-tres{
+    display: flex;
+    justify-content: center;
+    grid-area: disco-meb;
+}
+
+.track-list-meb{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-area: tracklist-meb;
+}
+
+.tdv{
+    grid-area: nombre-tdv;
+}
+
+.img-tdv{
+    height: 500px;
+}
+
+.album-cuatro{
+    display: flex;
+    justify-content: center;
+    grid-area: disco-tdv;
+}
+
+.track-list-tdvU{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    margin: 30px;
+    grid-area: tracklist-tdv;
+}
+
+.track-list-tdvD{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 30px;
+    grid-area: tracklist-tdv;
+}
+
+/* MQ */
+
+@media screen and (max-width:768px){
+
+    nav{
+        display: none;
+    }
+
+    .videoResumen{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .video{
+        width: 700px;
+        margin: 10px;
+    }
+}
